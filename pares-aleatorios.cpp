@@ -1,24 +1,19 @@
 #include <cstdio>
 #include <ctime>
-#include <conio.h>
-#include <stdlib.h>
+#include <cstdlib>
 
 int main ()
 {
     int a;
     int x;
     srand(time(NULL));
-    for (int x=0; x<10; x++)
-        {
-       // x = 1 + rand()% ((115+1) - 1);
-        //if(x%2==0)
-       // {
-            //a=x+1;
-        //}
-        printf("%d\n",x);
+    for (int x=0; x<10; x++) {
+        a = rand() % 115 + 1;
+        if(a%2!=0){
+            a=a+1;
+        }
+        printf("%d\n",a);
     }
-    getch();
-
 
     return 0;
 
