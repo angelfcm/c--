@@ -5,7 +5,6 @@
 int main ()
 {
     int a;
-    int x;
     int suma = 0;
     srand(time(NULL));
     for (int x=0; x<10; x++) {
